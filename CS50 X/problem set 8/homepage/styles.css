@@ -1,0 +1,82 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #2a2929;
+    padding: 10px;
+
+  }
+
+nav a {
+    text-decoration: none;
+    color: #f7f7f7;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: bold;
+  }
+
+nav a:hover {
+    color:rgb(241, 214, 178);
+    background-color: #2a2929;
+  }
+
+
+body {
+    display: grid;
+    font-family: PingFang SC, sans-serif;
+    background-image: linear-gradient(90deg, #222020, #434343);
+
+  }
+  .image-block-github {
+    width: 500px;
+    height: 400px;
+    margin: 40px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+  }
+  .image-block-mail {
+    width: 500px;
+    height: 400px;
+    margin: 40px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+  }
+
+  figure {
+    position: relative;
+    height: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+  }
+
+  figcaption a {
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+  }
+
+  figcaption a:hover {
+    text-decoration: none;
+    color: rgb(213, 161, 94);
+  }
+
+  

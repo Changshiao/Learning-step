@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            function CheckAnswre(event)
+            {
+                let answers=document.getElementById('feedback1');
+                let button=event.target;
+                if (button.innerHTML=="beef")
+                {
+                    button.style.backgroundColor="green"
+                    answers.innerHTML="Correct!";
+                }
+                else
+                {
+                    button.style.backgroundColor="red"
+                    answers.innerHTML="Incorrect";
+                }
+            }
+            // TODO: Add code to check answers to questions
+            function CheckAnswre2(event)
+            {
+                let input = document.getElementById('question1');
+                let feedback = document.getElementById('feedback2');
+                if (input.value==="dsq"){
+                    input.style.backgroundColor = 'Green';
+                    feedback.innerHTML = 'Correct!';
+                }
+                else{
+                    input.style.backgroundColor = 'Red';
+                    feedback.innerHTML = 'Incorrect';
+                }
+
+
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>
+                    What's Shiao's favourite food?
+                </h3>
+                <p  id="feedback1"></p>
+                <hr>
+                <button onclick="CheckAnswre(event)">beef</button>
+                <button onclick="CheckAnswre(event)">chicken</button>
+                <button onclick="CheckAnswre(event)">fish</button>
+                <button onclick="CheckAnswre(event)">bread</button>
+                <!-- TODO: Add multiple choice question here -->
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>
+                    Who is Shiao's favourite?
+                </h3>
+                <p id ="feedback2"></p>
+                <hr>
+                <input type="text" name="question" id="question1">
+                <button onclick="CheckAnswre2(event)">submit</button>
+                <!-- TODO: Add free response question here -->
+            </div>
+        </div>
+    </body>
+</html>
